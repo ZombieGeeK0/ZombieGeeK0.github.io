@@ -1,0 +1,101 @@
+html {
+	height: 100%;
+	width: 100%;
+	font-family: Consolas;
+}
+
+body {
+	background-image: url('https://p4.wallpaperbetter.com/wallpaper/307/1007/826/windows-11-microsoft-hd-wallpaper-preview.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.presentacion {
+	color: black;
+	font-family: Consolas;
+	text-align: left;
+	margin-left: 37px;
+	margin-right: 37px;
+    color: white;
+    background-color: white;
+}
+
+.indice {
+    text-decoration: none;
+    margin-left: 14px;
+    padding: 4px;
+    border-radius: 3px;
+    border: solid 3px black;
+    color: black;
+}
+
+.box {
+	background-color: white;
+	height: 600px;
+	width: 600px;
+	border-radius: 8px;
+	margin-top: 70px;
+}
+
+.button {
+	margin-top: 40px;
+	padding: 4px;
+	border: solid 4px black;
+	color: black;
+	background-color: white;
+	border-radius: 4px;
+	margin: 5px;
+}
+
+a {
+	text-decoration: none;
+	font-family: consolas;
+}
+
+h1 {
+	color: black;
+	font-family: Consolas;
+    margin: 20px;
+}
+
+img {
+	padding: 20px;
+	border-radius: 8px;
+	border: solid 4px black;
+}
+
+.sidebar {
+    float: left;
+    background-color: #20b3ea;
+    width: 17%;
+    height: 700px;
+    margin: 7px;
+    border-radius: 8px;
+}
+
+.content {
+    float: left;
+    background-color: #20b3ea;
+    width: 81%;
+    height: 700px;
+    margin: 7px;
+    border-radius: 8px;
+}
+
+.pmenu {
+    margin: 15px;
+}
+
+.pbox {
+    background-color: white;
+    height: 550px;
+    width: 1189px;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.ex {
+    margin: 20px;
+}
