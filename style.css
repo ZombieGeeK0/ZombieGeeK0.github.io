@@ -2,6 +2,9 @@ html {
 	height: 100%;
 	width: 100%;
 	font-family: Consolas;
+	display: flex; 
+	flex-wrap: wrap; 
+	justify-content: center;
 }
 
 body {
@@ -18,8 +21,8 @@ body {
 	text-align: left;
 	margin-left: 37px;
 	margin-right: 37px;
-    	color: white;
-    	background-color: white;
+    color: white;
+    background-color: white;
 }
 
 .indice {
@@ -39,6 +42,15 @@ body {
 	margin-top: 70px;
 }
 
+.chat {
+	background-color: white;
+	height: 600px;
+	width: 1189px;
+	border-radius: 8px;
+	margin-top: 70px;
+	margin-left: 159px;
+}
+
 .button {
 	margin-top: 40px;
 	padding: 4px;
@@ -52,7 +64,6 @@ body {
 a {
 	text-decoration: none;
 	font-family: consolas;
-	
 }
 
 h1 {
@@ -71,7 +82,7 @@ img {
     float: left;
     background-color: #20b3ea;
     width: 17%;
-    height: 750px;
+    height: 700px;
     margin: 7px;
     border-radius: 8px;
 }
@@ -79,8 +90,8 @@ img {
 .content {
     float: left;
     background-color: #20b3ea;
-    width: 78%;
-    height: 750px;
+    width: 81%;
+    height: 700px;
     margin: 7px;
     border-radius: 8px;
 }
@@ -92,11 +103,15 @@ img {
 .pbox {
     background-color: white;
     height: 550px;
-    width: 75%;
+    width: 1189px;
     border-radius: 8px;
     margin: 20px;
 }
 
 .ex {
     margin: 20px;
+}
+
+#send-button {
+	margin-left: 4px;
 }
