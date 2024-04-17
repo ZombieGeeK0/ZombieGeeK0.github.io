@@ -2,9 +2,6 @@ html {
 	height: 100%;
 	width: 100%;
 	font-family: Consolas;
-	display: flex;
-    	flex-wrap: wrap;
-    	justify-content: start;
 }
 
 body {
@@ -21,8 +18,8 @@ body {
 	text-align: left;
 	margin-left: 37px;
 	margin-right: 37px;
-    color: white;
-    background-color: white;
+    	color: white;
+    	background-color: white;
 }
 
 .indice {
@@ -55,6 +52,7 @@ body {
 a {
 	text-decoration: none;
 	font-family: consolas;
+	
 }
 
 h1 {
