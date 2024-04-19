@@ -1,55 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>The Hidden Wikipedia for Students</title>
-	<link rel="stylesheet" class="link" href="styles.css" 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Hidden Wikipedia for Students</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<div class="sidebar">
-		<p class="text">Esta es la lista de enlaces a diferentes sitios web, a los que podrás acceder directamente desde aquí:</p>
-		<ul>
-			<li><a class="link" href="https://poki.com/es" target="_blank">Poki</a></li>
-             <li><a class="link" href="https://www.1001juegos.com/" target="_blank">1001</a></li>
-             <li><a class="link" href="https://www.minijuegos.com/" target="_blank">Minijuegos</a></li>
-             <li><a class="link" href="https://tetris.com/play-tetris" target="_blank">Tetris</a></li>
-             <li><a class="link" href="https://www.google.com/search?client=firefox-b-d&q=pacmen" target="_blank">Pacman</a></li>
-             <li><a class="link" href="https://www.amazon.es/" target="_blank">Amazon</a></li>
-             <li><a class="link" href="https://es.aliexpress.com/" target="_blank">Aliexpress</a></li>
-             <li><a class="link" href="https://es.wallapop.com/" target="_blank">Wallapop</a></li>
-             <li><a class="link" href="https://www.nike.com/es/" target="_blank">Nike</a></li>
-             <li><a class="link" href="https://www.newbalance.es/es" target="_blank">New Balance</a></li>
-             <li><a class="link" href="https://www.pccomponentes.com/" target="_blank">PC Componentes</a></li>
-             <li><a class="link" href="https://www.gmail.com/" target="_blank">Gmail</a></li>
-             <li><a class="link" href="https://classroom.google.com/" target="_blank">Classroom</a></li>
-             <li><a class="link" href="https://www.canva.com/" target="_blank">Canva</a></li>
-             <li><a class="link" href="https://es.wikipedia.org/wiki/Wikipedia:Portada" target="_blank">Wikipedia</a></li>
-             <li><a class="link" href="https://chat.openai.com/" target="_blank">ChatGPT</a></li>
-             <li><a class="link" href="https://www.myinstants.com/es/index/us/" target="_blank">Panel de Sonidos de Memes</a></li>
-             <li><a class="link" href="https://discord.com/" target="_blank">Discord</a></li>
-             <li><a class="link" href="https://www.youtube.com/" target="_blank">Youtube</a></li>
-             <li><a class="link" href="https://music.youtube.com/" target="_blank">Youtube Music</a></li>
-             <li><a class="link" href="https://open.spotify.com/intl-es" target="_blank">Spotify</a></li>
-             <li><a class="link" href="https://github.com/" target="_blank">GitHub</a></li>
-             <li><a class="link" href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></li>
-             <li><a class="link" href="https://www.desmos.com/scientific?lang=es" target="_blank">Calculadora</a></li>
-             <li><a class="link" href="https://pranx.com/hacker/simulador/" target="_blank">Hacker Simulator</a></li>
-             <li><a class="link" href="https://pranx.com/windows-xp-simulator/" target="_blank">Windows XP Simulator</a></li>
-             <li><a class="link" href="https://pranx.com/" target="_blank">Pranx</a></li>
-             <li><a class="link" href="https://resoomer.com/es/" target="_blank">Resoomer</a></li>
-             <li><a class="link" href="https://convertio.co/es/" target="_blank">Convertio</a></li>
-		</ul>
+	<div id="formulario">
+			<input placeholder="Ingresa la contraseña..." class="form" type="password" id="contrasenaInput">
+			<button class="form" onclick="verificarContrasena()">Ingresar</button>
+			<p id="mensajeError" style="color: red;"></p>
 	</div>
-	<div class="content">
-		<p class="text"></p>
-	</div>
-	<div class="sidebar">
-		<p class="text">Estas son las secciones privadas para usuarios destacados protegidas por contraseña. Los usuarios poseedores de una sección, que entren en el enlace que contenga su ID proporcionado, e ingresen la contrseña que me ha sido mencionada:</p>
-        <ul>
-            <li><a class="link" href="pass.html">#0000</a></li>
-            <li><a class="link" href="user-0001.html">#0001</a></li>
-        </ul>
-	</div>
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
