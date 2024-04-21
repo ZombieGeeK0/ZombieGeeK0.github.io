@@ -1,35 +1,41 @@
-html {
-    background-image: url('https://www.itl.cat/pngfile/big/326-3261771_film-anonymous-mask-wallpaper-3d.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-h1 {
-    font-family: Consolas;
-    border: solid 5px;
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .chat-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #chat-box {
+    height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
     padding: 10px;
-    background-color: black;
-    border-radius: 7px;
-    width: 670px;
-    color: white;
-}
-
-.button {
-    padding: 5px;
-    width: 100px;
-    height: 70px;
-    background-color: black;
-    border-radius: 7px;
-    border: solid 5px;
-    border-color: white;
-    font-family: Consolas;
-    margin-left: 40px;
-    margin-top: 20px;
-    color: white;
-}
-
-input {
-    font-family: Consolas;
-}
+    margin-bottom: 10px;
+  }
+  
+  #user-input {
+    width: calc(100% - 70px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
