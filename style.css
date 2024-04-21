@@ -44,3 +44,32 @@ body {
     text-decoration: none;
     color: black;
 } 
+
+.text {
+  margin: 10px;
+  font-style: bold;
+}
+
+#contact-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
