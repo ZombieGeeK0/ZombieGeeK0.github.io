@@ -1,89 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="chat_style.css">
-    <title>The Hidden Wikipedia for Students</title>
-    <br>
-    <style>
-        #chat-container {
-            width: 500px;
-            height: 170pxpx;
-            border: solid 5px black;
-            overflow-y: scroll;
-            border-radius: 4px;
-            margin-left: 40px;
-        }
-        #messages {
-            padding: 10px;
-            font-family: Consolas;
-        }
-        #input-container {
-            display: flex;
-            width: 100px;
-            height: 40px;
-            margin-left: 40px;
-        }
-        #message-input {
-            flex: 1;
-            padding: 5px;
-            border: solid 5px black;
-        }
-        #send-button {
-            padding: 5px 10px;
-            background-color: white;
-            color: black;
-            border: solid 5px black;
-            cursor: pointer;
-            margin-left: 5px;
-        }
-
-        body {
-            background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d0a65880-cb5a-4500-b506-61c4ef168176/dea1pb8-73f6bfc3-d254-4980-94e9-dd2dbc0d64dd.jpg/v1/fill/w_1280,h_931,q_75,strp/just_in_case_of_need_for_gtr_by_horcikdesigns_dea1pb8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTMxIiwicGF0aCI6IlwvZlwvZDBhNjU4ODAtY2I1YS00NTAwLWI1MDYtNjFjNGVmMTY4MTc2XC9kZWExcGI4LTczZjZiZmMzLWQyNTQtNDk4MC05NGU5LWRkMmRiYzBkNjRkZC5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.AHem-pyttQwrgr1YlYcY0YaFJ3nSrlDzKnu2oFJtKRw');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-            font-family: Consolas, courier new;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hidden Wikipedia for Students</title>
+  <link rel="stylesheet" href="chat-style.css">
 </head>
 <body>
-<div id="chat-container">
-    <div id="messages"></div>
-</div>
-<br>
-<div id="input-container">
-    <input type="text" id="message-input" placeholder="Escribe tu mensaje...">
-    <button id="send-button">Enviar</button>
-</div>
-
-<script>
-    function addMessage(message, isUser) {
-        const messagesContainer = document.getElementById('messages');
-        const messageElement = document.createElement('div');
-        messageElement.classList.add('message');
-        if (isUser) {
-            messageElement.innerHTML = `<strong>Tú:</strong> ${message}`;
-        } else {
-            messageElement.innerHTML = `<strong>Otro usuario:</strong> ${message}`;
-        }
-        messagesContainer.appendChild(messageElement);
-        messagesContainer.scrollTop = messagesContainer.scrollHeight;
-    }
-
-    // Manejador de evento para enviar un mensaje
-    document.getElementById('send-button').addEventListener('click', function() {
-        const messageInput = document.getElementById('message-input');
-        const message = messageInput.value.trim();
-        if (message !== '') {
-            addMessage(message, true);
-            // Aquí podrías enviar el mensaje a un servidor o realizar cualquier otra acción necesaria
-            messageInput.value = '';
-        }
-    });
-
-</script>
+  <div class="chat-container">
+    <div id="chat-box"></div>
+    <input type="text" id="user-input" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+  <script src="chat-script.js"></script>
 </body>
 </html>
