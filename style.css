@@ -73,3 +73,10 @@ body {
   height: 20px;
   margin-right: 10px;
 }
+
+.user-img {
+  margin: 20px;
+  border-radius: 10px;
+  width: 950px;
+  float: right;
+}
