@@ -14,7 +14,6 @@ path = os.getcwd()
 version = platform.version()
 release = platform.release()
 platform = platform.platform()
-ram = psutil.virtual_memory()
 
 message_date = f'`[+] Reporte realizado a las` **{date}**'
 message_username = f'`[+] Nombre de usuario:` **{username}**'
