@@ -20,7 +20,7 @@ body {
 .sidebar {
   background-color: white;
   width: 247px;
-  height: 687px;
+  height: 740px;
   border-radius: 10px;
   float: left;
   margin: 10px;
@@ -31,7 +31,7 @@ body {
 .content {
   background-color: white;
   width: 77%;
-  height: 687px;
+  height: 740px;
   border-radius: 10px;
   float: left;
   margin: 10px;
